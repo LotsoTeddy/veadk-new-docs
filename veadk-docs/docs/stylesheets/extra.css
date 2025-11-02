@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Maple Mono";
+  src: "./fonts/MapleMono-NF-CN-Regular.ttf";
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 100;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 200;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 300;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 600;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 800;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: italic;
+    font-weight: 900;
+    src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff') format('woff');
+}
+
+
+.md-typeset h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.md-typeset h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.md-typeset h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.md-typeset {
+    font-size: 16px;
+}
+
+.md-ellipsis {
+    font-size: 14px;
+}
+
+.md-typeset pre {
+    border-radius: 8px
+}
+
+.custom-iframe {
+  width: 50%;
+  height: auto;
+  border: none;               /* 去除边框 */
+  border-radius: 12px;        /* 圆角效果 */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* 柔和阴影 */
+  overflow: hidden;           /* 防止内容溢出 */
+  background-color: #fff;     /* 背景色，避免加载时突兀 */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* .custom-iframe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+} */
+
+.responsive-video {
+  width: 50%;        /* 宽度占父容器50% */
+  height: auto;      /* 高度根据宽度自适应 */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,117 @@
+site_name: Volcengine ADK
+site_description: Documents for Volcengine Agent Development Kit
+repo_url: https://github.com/volcengine/veadk-python
+repo_name: volcengine/veadk-python
+copyright: Copyright &copy; 2025 Volcengine
+
+theme:
+  name: material
+  logo: assets/images/volcengine-color.svg
+  icon: assets/images/volcengine-color.svg
+  font:
+    text: SF Pro Display
+    code: Maple Mono
+
+nav:
+  - 欢迎: index.md
+  - 初识 Agent 世界:
+      - 概述: intro/overview.md
+      - 快速开始: intro/quickstart.md
+      - 常见问题: intro/troubleshooting.md
+  - Hello Agent:
+      - 简易 Agent 构建: agent/agent.md
+      - 多 Agents 交互系统: agent/agents.md
+      - Agent-to-Agent 系统: agent/agent-to-agent.md
+  - 个性化引擎——记忆:
+      - 短期记忆: memory/short-term-memory.md
+      - 长期记忆: memory/long-term-memory.md
+      - 最佳实践: memory/best-practice.md
+  - 连接能力源——工具:
+      - 内置工具: tools/builtin.md
+      - 自定义工具: tools/function.md
+  - 连接数据源——知识库:
+      - 基本使用: knowledgebase/overview.md
+      - 最佳实践: knowledgebase/best-practice.md
+  - 可观测:
+      - 开启观测: observation/tracing.md
+      - 在火山引擎观测: observation/ve-tracing.md
+      - 埋点与字段规范: observation/span-attributes.md
+  - 评测:
+      - 一般流程: evaluation/overview.md
+      - 评测集: evaluation/evalset.md
+      - 评估器: evaluation/evaluator.md
+      - 最佳实践: evaluation/best-practice.md
+  - 持续优化:
+      - 强化学习: optimization/rl.md
+  - 部署:
+      - 从命令行部署: deployment/from-cli.md
+      - 从代码部署: deployment/from-code.md
+      - 调用方法: deployment/invoke.md
+      - 持续交付: deployment/cicd.md
+  - 命令行工具: cli.md
+  - llms.txt: llms-txt.md
+  - Agent Gallery: agent-gallery.md
+
+plugins:  
+  - search
+  - mkdocs-video:
+      is_video: True
+      video_muted: True
+      video_controls: True
+      css_style:
+        width: "80%"
+        display: "block"
+        margin: "0 auto"
+        border-radius: "8px"
+        box-shadow: "0 4px 12px rgba(0, 0, 0, 0.25)"
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/volcengine/veadk-python
+  - icon: fontawesome/brands/python
+    link: https://pypi.org/project/veadk-python
+
+extra_css:
+  - stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - mkdocs-click
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      dedent_subsections: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - toc:
+      permalink: true
+      title: 导航
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
