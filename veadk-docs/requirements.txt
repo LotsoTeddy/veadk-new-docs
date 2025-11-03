@@ -5,3 +5,4 @@ mkdocstrings
 mkdocstrings-python
 mkdocs-click
 pymdown-extensions
+veadk-python
