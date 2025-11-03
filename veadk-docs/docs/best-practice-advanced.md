@@ -1,5 +1,6 @@
 ---
 title: 最佳实践（进阶）
+icon: material/lightning-bolt
 ---
 
 ## Agent 应用数据飞轮

@@ -13,6 +13,13 @@ theme:
     code: Maple Mono
   features:
     - search.share
+    # - navigation.footer
+    # - navigation.instant.preview
+    # - navigation.path
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.top
 
 nav:
   - 欢迎: index.md
