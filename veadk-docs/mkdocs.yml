@@ -7,53 +7,52 @@ copyright: Copyright &copy; 2025 Volcengine
 theme:
   name: material
   logo: assets/images/volcengine-color.svg
-  icon: assets/images/volcengine-color.svg
+  favicon: assets/images/volcengine-color.svg
   font:
     text: SF Pro Display
     code: Maple Mono
+  features:
+    - search.share
 
 nav:
   - 欢迎: index.md
-  - 初识 Agent 世界:
-      - 概述: intro/overview.md
-      - 快速开始: intro/quickstart.md
-      - 常见问题: intro/troubleshooting.md
+  - 初识 VeADK 世界: veadk.md
+  - 企业级 Agent 设计：从 0 到 1: design.md
+  - 快速开始: quickstart.md
+  - 常见问题: troubleshooting.md
   - Hello Agent:
+      - Agent 核心要素概述: agent/overview.md
       - 简易 Agent 构建: agent/agent.md
       - 多 Agents 交互系统: agent/agents.md
       - Agent-to-Agent 系统: agent/agent-to-agent.md
+  - 执行引擎——Runner: runner.md
   - 个性化引擎——记忆:
       - 短期记忆: memory/short-term-memory.md
       - 长期记忆: memory/long-term-memory.md
-      - 最佳实践: memory/best-practice.md
+  - 最佳实践（记忆相关）: best-practice-memory.md
   - 连接能力源——工具:
       - 内置工具: tools/builtin.md
       - 自定义工具: tools/function.md
   - 连接数据源——知识库:
       - 基本使用: knowledgebase/overview.md
-      - 最佳实践: knowledgebase/best-practice.md
+  - 最佳实践（知识库相关）: best-practice-knowledgebase.md 
   - 可观测:
       - 开启观测: observation/tracing.md
       - 在火山引擎观测: observation/ve-tracing.md
       - 埋点与字段规范: observation/span-attributes.md
-  - 评测:
-      - 一般流程: evaluation/overview.md
-      - 评测集: evaluation/evalset.md
-      - 评估器: evaluation/evaluator.md
-      - 最佳实践: evaluation/best-practice.md
-  - 持续优化:
-      - 强化学习: optimization/rl.md
-  - 部署:
-      - 从命令行部署: deployment/from-cli.md
-      - 从代码部署: deployment/from-code.md
-      - 调用方法: deployment/invoke.md
-      - 持续交付: deployment/cicd.md
+  - 评测: evaluation.md
+  - 持续优化: optimization.md
+  - 部署: deploy.md
   - 命令行工具: cli.md
-  - llms.txt: llms-txt.md
   - Agent Gallery: agent-gallery.md
+  - API References: api.md
+  - 最佳实践（进阶）: best-practice-advanced.md
+  - llms.txt: llms-txt.md
+  
 
 plugins:  
-  - search
+  - search:
+      lang: zh
   - mkdocs-video:
       is_video: True
       video_muted: True

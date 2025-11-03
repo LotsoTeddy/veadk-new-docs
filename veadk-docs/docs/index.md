@@ -76,3 +76,15 @@ hide:
 <div style="text-align:center;">
   <a href="intro/quickstart/" class="btn btn-primary">快速开始</a>
 </div>
+
+## VeADK 主要能力
+
+## VeADK Highlights
+
+### 云原生 Agent
+
+### 内置工具
+
+### 强化学习一键对接
+
+## VeADK with 火山引擎对接
