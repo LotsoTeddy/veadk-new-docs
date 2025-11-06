@@ -82,4 +82,4 @@ veadk web
 
 交互界面如图：
 
-![image]()
+![image](/assets/images/volcengine-color.svg)
