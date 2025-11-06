@@ -6,6 +6,11 @@ title: 快速开始
 
 您可以从 PyPI 中安装最新版的 VeADK：
 
+```python
+--8<-- "examples/agent.py"
+```
+
+
 ```bash
 pip install veadk-python
 ```
@@ -82,4 +87,4 @@ veadk web
 
 交互界面如图：
 
-![image](/assets/images/volcengine-color.svg)
+![image](../assets/images/volcengine-color.svg)
